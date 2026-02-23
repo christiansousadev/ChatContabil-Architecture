@@ -1,1 +1,51 @@
+# ==========================================
+# Web Framework & API (FastAPI)
+# ==========================================
+fastapi==0.115.0
+uvicorn==0.30.6
+starlette==0.38.6
+pydantic==2.12.5
+python-multipart==0.0.9
 
+# ==========================================
+# Inteligência Artificial e Machine Learning
+# ==========================================
+torch==2.3.1
+transformers==4.43.3
+sentence-transformers==3.0.1
+huggingface-hub==0.36.0
+scikit-learn==1.8.0
+tokenizers==0.19.1
+safetensors==0.4.3
+
+# ==========================================
+# Processamento de Dados e Engenharia
+# ==========================================
+pandas==2.2.2
+numpy==1.26.4
+scipy==1.16.3
+openpyxl==3.1.5
+XlsxWriter==3.2.0
+fpdf2==2.7.9
+reportlab==4.1.0
+
+# ==========================================
+# Banco de Dados (PostgreSQL + Firebird + ORM)
+# ==========================================
+SQLAlchemy==2.0.32
+psycopg2-binary==2.9.9
+pgvector==0.2.5
+firebird-driver==2.0.2
+firebird-base==2.0.2
+firebirdsql==1.4.1
+alembic==1.13.2
+
+# ==========================================
+# Infraestrutura e Utilidades
+# ==========================================
+python-dotenv==1.0.1
+requests==2.32.3
+urllib3==2.6.1
+tqdm==4.67.1
+PyYAML==6.0.3
+pytest==8.3.2
