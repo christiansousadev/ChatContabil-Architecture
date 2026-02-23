@@ -1,72 +1,68 @@
-# 📊 ChatController - Sistema de Chat Contábil (Showcase Architecture)
+# 📊 ChatContabil-Architecture - Inteligência Artificial Aplicada à Contabilidade
 
-> **Aviso:** Este repositório é uma vitrine arquitetural (Showcase). Devido à sensibilidade dos dados contábeis e à propriedade intelectual envolvida, o código-fonte principal é mantido em um repositório privado. Aqui você encontrará a documentação da arquitetura, fluxo de dados e design do sistema.
+> **Aviso de Showcase:** Este repositório é uma vitrine arquitetural. Devido à sensibilidade dos dados contábeis (LGPD/Segredo de Negócio), o código-fonte principal é mantido de forma privada. Abaixo, detalho a engenharia por trás do sistema que integra bancos de dados contábeis, LLMs e automação de fluxos.
 
 ## 💡 Sobre o Projeto
-O **ChatController** é uma plataforma completa projetada para transformar a maneira como dados contábeis são analisados. O sistema integra uma interface conversacional intuitiva com serviços avançados de Inteligência Artificial, permitindo que os usuários façam consultas complexas em linguagem natural, automatizem a geração de relatórios e obtenham insights financeiros de forma ágil e segura.
+O **ChatContabil** é um ecossistema inteligente que permite a gestores e contadores interagirem com dados financeiros complexos através de linguagem natural. O sistema não apenas responde perguntas, mas interpreta, processa e gera documentos contábeis oficiais (DRE, Balanço, Balancete e Razão) em tempo real, conectando o poder das LLMs à precisão dos dados de ERPs contábeis.
 
-## 🚀 Principais Funcionalidades
-* **Interface Conversacional (Chat):** Comunicação em tempo real para consultas contábeis.
-* **Análise de Dados com IA:** Interpretação de grandes volumes de dados financeiros utilizando modelos de Inteligência Artificial.
-* **Automação de Relatórios:** Geração automatizada de balanços e demonstrativos com base nas interações do usuário.
-* **Integração de APIs:** Comunicação fluida e assíncrona entre o painel do usuário, o servidor principal e os motores de IA.
+## 🚀 Diferenciais Técnicos
+* **Extração de Relatórios via Chat:** Geração instantânea de DRE, Balanço Patrimonial, Balancetes e Razão apenas via comando de texto, respeitando períodos específicos e filtros de filiais.
+* **Orquestração Multi-LLM:** Suporte híbrido para modelos:
+    * **Locais (Privacidade):** Integração com **Phi-3** via Ollama para processamento local.
+    * **Web/Cloud:** Integração via API com **Gemini, GPT-4, Grok e DeepSeek**.
+* **RAG Personalizado (Retrieval-Augmented Generation):** Implementação de uma camada de recuperação que utiliza contexto contábil real para garantir que a IA não alucine sobre as normas brasileiras de contabilidade.
+* **Automação via Fluxo de Nós:** Interface visual para criação de fluxos de automação (envio de relatórios, alertas de inconsistências) utilizando lógica baseada em grafos.
 
 ---
 
-## 🏗️ Arquitetura do Sistema e Stack Tecnológico
+## 🏗️ Arquitetura e Stack
 
-O sistema foi desenhado em uma arquitetura de microsserviços para garantir escalabilidade, resiliência e separação de responsabilidades.
+O sistema utiliza uma arquitetura de microsserviços desacoplados, garantindo que o processamento pesado de IA não afete a experiência do usuário no chat.
 
-### 1. Frontend: Plataforma de Chat (`/plataformachat`)
-Responsável pela experiência do usuário e interface conversacional.
-* **Stack:** React, Next.js
-* **Papel:** Renderizar a interface de forma otimizada (SSR/SSG), gerenciar o estado da conversa e comunicar-se de forma segura com a API principal via requisições HTTP/WebSocket.
+### 1. Frontend: Dashboard e Chat (`/plataformachat`)
+* **Stack:** React 19, Next.js, Vite (Rolldown), TailwindCSS.
+* **Recurso Key:** Uso de `@xyflow/react` para a criação da interface visual de automação por nós, permitindo ao usuário "desenhar" o fluxo de geração de relatórios.
 
-### 2. Backend: API Principal (`/server`)
-O núcleo orquestrador do sistema.
-* **Stack:** Node.js, Express/NestJS (ajuste conforme sua stack)
-* **Papel:** Receber os prompts do usuário, gerenciar a autenticação/autorização, aplicar as regras de negócio iniciais e atuar como um Gateway de API, roteando as requisições pesadas para o serviço de IA.
+### 2. Backend: Orquestrador (`/server`)
+* **Stack:** Node.js (Express 5), JWT, Multer, Node-Cron, Swagger.
+* **Papel:** Atua como Gateway de API. Gerencia a autenticação, faz o agendamento de tarefas (Cron), gera PDFs e arquivos Excel e orquestra a comunicação entre o usuário e o microsserviço de IA.
 
 ### 3. Microsserviço de IA e Dados (`/iapython`)
-O motor analítico da aplicação.
-* **Stack:** Python, Pandas/NumPy, Bibliotecas de LLM (ex: LangChain, OpenAI API), SQL
-* **Papel:** Receber os comandos em linguagem natural enviados pelo Node.js, converter as intenções do usuário em consultas SQL complexas, acessar o banco de dados contábil, processar os dados financeiros e retornar análises e relatórios estruturados para o servidor.
+* **Stack:** Python (FastAPI), PyTorch, Transformers, Pandas, SQLAlchemy.
+* **Engenharia de Dados:** Conexão híbrida via **Firebird** (sistemas legados) e **PostgreSQL** com **pgvector** para busca semântica no RAG.
+* **Lógica Contábil:** Algoritmos para cálculo de DRE e Balancetes direto na camada de dados, enviando apenas o resultado estruturado para a LLM interpretar.
 
 ---
 
-## 🔄 Fluxo de Dados (Data Flow)
+## 🔄 Funcionamento do Fluxo de Inteligência
 
-1. **Input:** O usuário digita uma pergunta (ex: *"Gere o relatório de despesas operacionais do 3º trimestre"*) no frontend (React).
-2. **Orquestração:** O Frontend envia o payload para a API em Node.js.
-3. **Delegação:** O Node.js valida a requisição, verifica as permissões e encaminha o prompt via API interna para o microsserviço em Python.
-4. **Processamento:** O Python aciona o modelo de IA, que entende o contexto contábil, executa a extração/cálculo no banco de dados e formata o relatório.
-5. **Output:** A resposta é devolvida ao Node.js, que a repassa ao Frontend para ser exibida no chat do usuário.
-
----
-
-## 🔒 Governança e Segurança de Dados
-Devido à natureza crítica das informações (dados financeiros/contábeis), o sistema foi projetado com foco em:
-* **Segurança de APIs:** Comunicação entre os serviços Node.js e Python protegida e validada.
-* **Sanitização de Dados:** Tratamento rigoroso das entradas do usuário antes de qualquer execução no banco de dados para prevenir injeções de SQL.
-* **Rastreabilidade:** Logs estruturados das consultas realizadas para fins de auditoria e monitoramento de performance.
+1. **Intenção do Usuário:** O usuário solicita: *"Qual foi o lucro líquido da filial 1 no primeiro semestre?"*.
+2. **Interpretação (LLM Router):** O sistema identifica que é uma consulta de DRE e aciona a estratégia de extração de dados.
+3. **Execução Contábil:** O microsserviço Python executa as queries SQL no banco (Firebird/Postgres), aplica as regras de rollup e agrupamento de contas.
+4. **Contextualização (RAG):** O RAG busca no histórico e nas normas da empresa se há particularidades para aquele período.
+5. **Resposta Estruturada:** A LLM recebe os dados brutos + contexto e responde ao usuário com o valor e o link para o relatório (PDF/XLSX) gerado em segundos.
 
 ---
 
 ## 📸 Demonstração Visual
 
-*(Adicione aqui screenshots do painel ou um GIF demonstrando o chat em funcionamento)*
+### Interface do Chat e Relatórios
+*(Espaço para screenshot do chat gerando um DRE ou Balancete)*
+![Interface do Chat](./assets/chat-demo.png)
 
-![ChatController Dashboard Demo](./assets/demo-placeholder.png)
+### Automação de Fluxos (Workflows)
+*(Espaço para screenshot da tela de nós/flowchart de automação)*
+![Workflow de Automação](./assets/nodes-demo.png)
 
-> 🎥 **[Clique aqui para ver um vídeo de demonstração do sistema em funcionamento no YouTube/Loom]**
+### Documentação da API (Swagger)
+*(Espaço para screenshot do Swagger UI)*
+![Documentação Swagger](./assets/swagger-demo.png)
 
 ---
 
-## 📂 Estrutura de Diretórios de Referência
-Esta é a organização macro do repositório privado:
-
+## 📂 Estrutura de Diretórios
 ```text
 /
-├── /plataformachat    # Interface do chat (React/Next.js)
-├── /server            # API orquestradora (Node.js)
-└── /iapython          # Processamento de dados e IA (Python)
+├── /plataformachat    # Interface React 19 (Vite/Rolldown)
+├── /server            # Gateway Node.js (Orquestração e Relatórios)
+└── /iapython          # Motor de IA (Python, RAG, Integração Firebird)
