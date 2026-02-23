@@ -47,8 +47,12 @@ O sistema utiliza uma arquitetura de microsserviços desacoplados, garantindo qu
 ## 📸 Demonstração Visual
 
 ### Interface do Chat e Relatórios
-*(Espaço para screenshot do chat gerando um DRE ou Balancete)*
-![Interface do Chat](./assets/chat-demo.png)
+<img width="1917" height="1024" alt="LandingPage Black" src="https://github.com/user-attachments/assets/4ef1be78-f7a9-4b79-a53d-ef50078482e6" />
+<img width="1914" height="1026" alt="LandingPage White" src="https://github.com/user-attachments/assets/b1b44ab0-bc17-4c93-afc7-4220fc9b86c4" />
+
+
+
+
 
 ### Automação de Fluxos (Workflows)
 *(Espaço para screenshot da tela de nós/flowchart de automação)*
