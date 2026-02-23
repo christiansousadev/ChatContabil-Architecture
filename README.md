@@ -206,7 +206,11 @@ Padronização seguindo OpenAPI 3.0 para garantir integrabilidade e escalabilida
 
 ---
 
+<p align="center">
 **Desenvolvido por Christian Sousa** 
+</p>
+<p align="center">
 *Desenvolvimento de sistemas inteligentes e automação.*
+</p>
 
 ---
