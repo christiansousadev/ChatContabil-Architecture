@@ -122,7 +122,7 @@ Padronização seguindo OpenAPI 3.0 para garantir integrabilidade e escalabilida
 </p>
 
 ## 📂 Estrutura de Diretórios
-```text
+
 /plataformachat
 ├── /src
 │   ├── /pages           # Telas principais (Chat, Admin, RAG, Workflow Editor)
@@ -185,6 +185,6 @@ Padronização seguindo OpenAPI 3.0 para garantir integrabilidade e escalabilida
 ├── requirements.txt                     # Dependências do motor de IA e Dados
 └── Dockerfile                           # Configuração de containerização do microsserviço
 
----
 
-**Desenvolvido por Christia Sousa** *Desenvolvimento de sistemas inteligentes e automação.*
+**Desenvolvido por Christian Sousa**
+*Desenvolvimento de sistemas inteligentes e automação.*
