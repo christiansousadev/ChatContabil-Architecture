@@ -44,32 +44,93 @@ O sistema utiliza uma arquitetura de microsserviços desacoplados, garantindo qu
 
 ---
 
-## 📸 Demonstração Visual
+📸 Demonstração Visual
+🎨 Experiência de Entrada (UX/UI)
+A interface foi projetada para ser moderna e intuitiva, com suporte total a temas Dark e Light e uma área de login segura que reforça a confiabilidade do sistema.
 
-### Interface do Chat e Relatórios
-<img width="1917" height="1024" alt="LandingPage Black" src="https://github.com/user-attachments/assets/4ef1be78-f7a9-4b79-a53d-ef50078482e6" />
-<img width="1914" height="1026" alt="LandingPage White" src="https://github.com/user-attachments/assets/b1b44ab0-bc17-4c93-afc7-4220fc9b86c4" />
-<img width="1918" height="1002" alt="Login" src="https://github.com/user-attachments/assets/0cf68c8b-96b1-47ab-ba6a-5778396e6fed" />
-<img width="199" height="206" alt="Menu Opções" src="https://github.com/user-attachments/assets/7eecdbdf-a7d8-4293-8dcb-5f775ed806c9" />
-<img width="705" height="699" alt="Perfil" src="https://github.com/user-attachments/assets/b71d795f-3639-4c7b-aa23-0f3ad64783f6" />
+<p align="center">
+<img width="48%" alt="LandingPage Black" src="https://github.com/user-attachments/assets/4ef1be78-f7a9-4b79-a53d-ef50078482e6" />
+<img width="48%" alt="LandingPage White" src="https://github.com/user-attachments/assets/b1b44ab0-bc17-4c93-afc7-4220fc9b86c4" />
+</p>
 
-<img width="1362" height="594" alt="Chat 1" src="https://github.com/user-attachments/assets/0af87329-2264-411f-bd4c-8edf64579ae9" />
-<img width="1917" height="898" alt="Chat 2" src="https://github.com/user-attachments/assets/0b469e12-4422-467e-a0aa-59ec783a6de8" />
-<img width="1688" height="557" alt="Chat 3" src="https://github.com/user-attachments/assets/b44b1dbc-043f-4888-b7f5-53f9960493c3" />
-<img width="1913" height="616" alt="Painel Admin" src="https://github.com/user-attachments/assets/5d61bad4-0b26-450d-b75f-1dacb4ec0b08" />
-<img width="1854" height="799" alt="LLM" src="https://github.com/user-attachments/assets/a798f63f-4ca4-43d0-9aab-db77e2cee50b" />
-<img width="1863" height="547" alt="Prompts" src="https://github.com/user-attachments/assets/9bbb4a3a-6ad3-4f4b-aad1-7b0f1dc1bdb2" />
+<p align="center">
+<img width="60%" alt="Login" src="https://github.com/user-attachments/assets/0cf68c8b-96b1-47ab-ba6a-5778396e6fed" />
+</p>
+
+💬 O Core: Chat e Relatórios Inteligentes
+O coração do sistema. Aqui o usuário interage em linguagem natural para extrair dados complexos. Note a precisão na geração do Resumo do Balancete, onde a IA interpreta os dados do banco e apresenta o resultado de forma legível antes de gerar o arquivo final.
+
+<p align="center">
+<img width="48%" alt="Chat 1" src="https://github.com/user-attachments/assets/0af87329-2264-411f-bd4c-8edf64579ae9" />
+<img width="48%" alt="Chat 2" src="https://github.com/user-attachments/assets/0b469e12-4422-467e-a0aa-59ec783a6de8" />
+</p>
+
+⚙️ Painel Administrativo e Governança
+Controle total sobre quem acessa o quê. O painel administrativo permite gerenciar usuários, permissões por empresa e monitorar logs, garantindo a conformidade com as políticas de segurança da informação.
+
+<p align="center">
+<img width="100%" alt="Painel Admin" src="https://github.com/user-attachments/assets/5d61bad4-0b26-450d-b75f-1dacb4ec0b08" />
+</p>
+
+<p align="center">
+<img width="30%" alt="Menu Opções" src="https://github.com/user-attachments/assets/7eecdbdf-a7d8-4293-8dcb-5f775ed806c9" />
+<img width="65%" alt="Perfil" src="https://github.com/user-attachments/assets/b71d795f-3639-4c7b-aa23-0f3ad64783f6" />
+</p>
+
+🤖 Configuração de IA e Prompt Engineering
+O diferencial técnico: uma área dedicada para configurar múltiplos provedores de LLM (locais e cloud) e refinar os System Prompts. Isso permite "treinar" a IA para se comportar como um Auditor Sênior ou um Especialista em FP&A para cada tipo de relatório.
+
+<p align="center">
+<img width="100%" alt="LLM" src="https://github.com/user-attachments/assets/a798f63f-4ca4-43d0-9aab-db77e2cee50b" />
+</p>
+
+<p align="center">
+<img width="100%" alt="Prompts" src="https://github.com/user-attachments/assets/9bbb4a3a-6ad3-4f4b-aad1-7b0f1dc1bdb2" />
+</p>
 
 
-### Automação de Fluxos (Workflows)
-<img width="1845" height="445" alt="API Manager" src="https://github.com/user-attachments/assets/eb7a04f0-eb8d-4957-84b6-50dd2f429070" />
-<img width="1906" height="903" alt="Fluxo Automação" src="https://github.com/user-attachments/assets/48bb20f9-2f01-46f5-a7ca-d08eb974ba11" />
-<img width="453" height="599" alt="Nós" src="https://github.com/user-attachments/assets/fd185398-97fe-4988-a7ac-3ba532404e8b" />
+⚙️ Automação de Fluxos (Workflows)
+O ChatContabil vai além do chat passivo, permitindo a criação de Workflows Inteligentes. Através de uma interface baseada em nós (Node-based UI), é possível orquestrar tarefas complexas que conectam o banco de dados contábil a serviços externos e modelos de IA.
 
+🛠️ Gerenciamento e Execução
+O painel de controle permite gerenciar múltiplos fluxos de automação, monitorar taxas de sucesso e orquestrar integrações de forma visual e centralizada.
 
-### Documentação da API (Swagger)
-<img width="1985" height="1035" alt="Swagger" src="https://github.com/user-attachments/assets/f77c270f-cc0d-4d0d-841a-fff7e13e7f46" />
+<p align="center">
+<img width="100%" alt="API Manager" src="https://github.com/user-attachments/assets/eb7a04f0-eb8d-4957-84b6-50dd2f429070" />
+</p>
 
+🏗️ Anatomia de um Fluxo Contábil
+A imagem abaixo demonstra um fluxo real de fechamento mensal:
+
+Trigger: Ativado via Webhook ou agendamento cron.
+
+Processamento: Execução de query SQL no Firebird, iteração de dados (Loop) e tomada de decisão lógica.
+
+Ações: Geração automática do relatório (PDF/XLSX), upload para o Google Drive e envio de notificação por e-mail.
+
+<p align="center">
+<img width="100%" alt="Fluxo Automação" src="https://github.com/user-attachments/assets/48bb20f9-2f01-46f5-a7ca-d08eb974ba11" />
+</p>
+
+🧩 Biblioteca de Componentes (Nós)
+O sistema conta com uma biblioteca extensível de blocos funcionais, incluindo:
+
+Inteligência Artificial: Agentes autônomos baseados em GPT-4 ou Claude.
+
+Conectores: SQL (Bancos de dados), Google Drive, SMTP (E-mail), HTTP Request.
+
+Lógica Avançada: Código Javascript customizado, Condicionais (IF/ELSE) e Delays.
+
+<p align="center">
+<img width="50%" alt="Nós" src="https://github.com/user-attachments/assets/fd185398-97fe-4988-a7ac-3ba532404e8b" />
+</p>
+
+📖 Documentação da API (Swagger)
+A arquitetura segue os padrões OpenAPI 3.0, garantindo que o sistema seja facilmente integrável com outros softwares. A documentação via Swagger detalha todos os endpoints de administração, configuração de LLMs e rotas de execução de IA, facilitando a manutenção e a escalabilidade técnica do projeto.
+
+<p align="center">
+<img width="100%" alt="Swagger" src="https://github.com/user-attachments/assets/f77c270f-cc0d-4d0d-841a-fff7e13e7f46" />
+</p>
 ---
 
 ## 📂 Estrutura de Diretórios
