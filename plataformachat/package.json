@@ -2,7 +2,7 @@
   "name": "chatcontabil-frontend",
   "version": "1.0.0",
   "description": "Interface conversacional e visualização de dados do sistema Chat Contábil",
-  "author": "Chris",
+  "author": "Christian Sousa",
   "private": true,
   "type": "module",
   "scripts": {
