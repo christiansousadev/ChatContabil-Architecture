@@ -121,8 +121,8 @@ Padronização seguindo OpenAPI 3.0 para garantir integrabilidade e escalabilida
 <img width="100%" alt="Swagger" src="https://github.com/user-attachments/assets/f77c270f-cc0d-4d0d-841a-fff7e13e7f46" />
 </p>
 
-## 📂 Estrutura de Diretórios
-
+📂 Estrutura de Diretórios
+Plaintext
 /plataformachat
 ├── /src
 │   ├── /pages           # Telas principais (Chat, Admin, RAG, Workflow Editor)
@@ -183,8 +183,7 @@ Padronização seguindo OpenAPI 3.0 para garantir integrabilidade e escalabilida
 ├── /cache                               # Armazenamento temporário de processamentos (ignorado no git)
 ├── main.py                              # Ponto de entrada da API FastAPI
 ├── requirements.txt                     # Dependências do motor de IA e Dados
-└── Dockerfile                           # Configuração de containerização do microsserviço
-
+└── Dockerfile                           # Configuração de containerização do micr
 
 **Desenvolvido por Christian Sousa**
 *Desenvolvimento de sistemas inteligentes e automação.*
