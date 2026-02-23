@@ -49,18 +49,26 @@ O sistema utiliza uma arquitetura de microsserviços desacoplados, garantindo qu
 ### Interface do Chat e Relatórios
 <img width="1917" height="1024" alt="LandingPage Black" src="https://github.com/user-attachments/assets/4ef1be78-f7a9-4b79-a53d-ef50078482e6" />
 <img width="1914" height="1026" alt="LandingPage White" src="https://github.com/user-attachments/assets/b1b44ab0-bc17-4c93-afc7-4220fc9b86c4" />
+<img width="1918" height="1002" alt="Login" src="https://github.com/user-attachments/assets/0cf68c8b-96b1-47ab-ba6a-5778396e6fed" />
+<img width="199" height="206" alt="Menu Opções" src="https://github.com/user-attachments/assets/7eecdbdf-a7d8-4293-8dcb-5f775ed806c9" />
+<img width="705" height="699" alt="Perfil" src="https://github.com/user-attachments/assets/b71d795f-3639-4c7b-aa23-0f3ad64783f6" />
 
-
-
+<img width="1362" height="594" alt="Chat 1" src="https://github.com/user-attachments/assets/0af87329-2264-411f-bd4c-8edf64579ae9" />
+<img width="1917" height="898" alt="Chat 2" src="https://github.com/user-attachments/assets/0b469e12-4422-467e-a0aa-59ec783a6de8" />
+<img width="1688" height="557" alt="Chat 3" src="https://github.com/user-attachments/assets/b44b1dbc-043f-4888-b7f5-53f9960493c3" />
+<img width="1913" height="616" alt="Painel Admin" src="https://github.com/user-attachments/assets/5d61bad4-0b26-450d-b75f-1dacb4ec0b08" />
+<img width="1854" height="799" alt="LLM" src="https://github.com/user-attachments/assets/a798f63f-4ca4-43d0-9aab-db77e2cee50b" />
+<img width="1863" height="547" alt="Prompts" src="https://github.com/user-attachments/assets/9bbb4a3a-6ad3-4f4b-aad1-7b0f1dc1bdb2" />
 
 
 ### Automação de Fluxos (Workflows)
-*(Espaço para screenshot da tela de nós/flowchart de automação)*
-![Workflow de Automação](./assets/nodes-demo.png)
+<img width="1845" height="445" alt="API Manager" src="https://github.com/user-attachments/assets/eb7a04f0-eb8d-4957-84b6-50dd2f429070" />
+<img width="1906" height="903" alt="Fluxo Automação" src="https://github.com/user-attachments/assets/48bb20f9-2f01-46f5-a7ca-d08eb974ba11" />
+<img width="453" height="599" alt="Nós" src="https://github.com/user-attachments/assets/fd185398-97fe-4988-a7ac-3ba532404e8b" />
+
 
 ### Documentação da API (Swagger)
-*(Espaço para screenshot do Swagger UI)*
-![Documentação Swagger](./assets/swagger-demo.png)
+<img width="1985" height="1035" alt="Swagger" src="https://github.com/user-attachments/assets/f77c270f-cc0d-4d0d-841a-fff7e13e7f46" />
 
 ---
 
