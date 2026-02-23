@@ -135,7 +135,64 @@ A arquitetura segue os padrões OpenAPI 3.0, garantindo que o sistema seja facil
 
 ## 📂 Estrutura de Diretórios
 ```text
-/
-├── /plataformachat    # Interface React 19 (Vite/Rolldown)
-├── /server            # Gateway Node.js (Orquestração e Relatórios)
-└── /iapython          # Motor de IA (Python, RAG, Integração Firebird)
+/plataformachat
+├── /src
+│   ├── /pages           # Telas principais (Chat, Admin, RAG, Workflow Editor)
+│   ├── /components      # Componentes modulares e reutilizáveis
+│   │   └── /api         # Módulos de gestão de monitoramento, relatórios e automação
+│   │       └── /workflows # Engine visual de automação (Nodes, Edges e UI)
+│   ├── /hooks           # Custom Hooks para lógica de API, Webhooks e Fluxos
+│   ├── /utils           # Helpers de formatação, validação, auth e storage
+│   ├── /assets          # Ativos estáticos e identidade visual da plataforma
+│   ├── App.jsx          # Orquestrador de rotas e contextos globais
+│   └── main.jsx         # Ponto de entrada da aplicação
+├── /cert                # Certificados SSL para ambiente de desenvolvimento seguro
+├── /public              # Ativos públicos acessíveis via raiz
+├── Dockerfile.web* # Arquivos de containerização (Dev e Produção)
+├── docker-compose* # Orquestração de ambientes multi-stage
+├── tailwind.config.js   # Configuração do motor de design system
+└── vite.config.js       # Configuração do Bundler e Proxy reverso
+
+/server
+├── /rotas               # Definição de endpoints Express
+│   ├── /apimanager      # Rotas para gestão de chaves, fluxos e agendamentos
+│   ├── /components      # Lógica de rotas específicas (Chat DRE, Balanço, Razão)
+│   └── index.js         # Centralizador de rotas
+├── /services            # A "Engenharia" do sistema
+│   ├── /workflows       # Motor de Automação (Engine e histórico)
+│   │   └── /nodes       # Implementação individual de cada nó (SQL, HTTP, IF, etc.)
+│   ├── /apimanager      # Serviços de suporte (Proxy, Scheduler, DB Helpers)
+│   └── llm_interpret.js # Integração e interpretação de prompts via LLM
+├── /lib                 # Bibliotecas utilitárias e wrappers
+│   ├── auth.js          # Middleware de autenticação e JWT
+│   ├── llm.js           # Wrapper para comunicação com provedores de IA
+│   └── swagger.js       # Configuração da documentação OpenAPI
+├── /docs                # Documentação OpenAPI/Swagger modularizada (YAML)
+│   ├── chat.yaml, dre.yaml, workflows.yaml, etc.
+├── /storage             # Persistência de arquivos (Relatórios, Avatares, Logs)
+├── index.js             # Ponto de entrada da aplicação
+├── db.js                # Singleton de conexão com o banco de dados
+├── nlp_config.json      # Configurações de processamento de linguagem natural
+└── Dockerfile           # Receita para deploy em containers
+
+/iapython
+├── /balancete, /balanco, /dre, /razao   # Módulos core de extração e lógica contábil
+│   ├── api_*.py                         # Endpoints específicos de cada relatório
+│   └── *_core.py                        # Regras de negócio e processamento de dados
+├── /rag                                 # Camada de Retrieval-Augmented Generation
+│   ├── rag_*.py                         # Estratégias de recuperação por tipo de relatório
+│   ├── rag_index.py                     # Orquestração de busca semântica
+│   └── nlp_config.json                  # Configurações de processamento de linguagem
+├── /reports                             # Geração de documentos (PDF/XLSX/CSV)
+│   ├── report_*.py                      # Templates e formatação de saída
+│   └── report_index.py                  # Gerenciador de exportações
+├── /sql                                 # Repositório de queries SQL otimizadas
+│   ├── balanco.sql, balancete.sql, etc. # Consultas nativas para o banco Firebird/Postgres
+├── /services                            # Camada de infraestrutura e utilitários
+│   ├── db.py                            # Gerenciamento de conexões (Firebird/SQLAlchemy)
+│   └── utils.py                         # Funções auxiliares de sanitização e cálculo
+├── /data                                # Metadados e estruturas de configuração (JSON)
+├── /cache                               # Armazenamento temporário de processamentos (ignorado no git)
+├── main.py                              # Ponto de entrada da API FastAPI
+├── requirements.txt                     # Dependências do motor de IA e Dados
+└── Dockerfile                           # Configuração de containerização do microsserviço
