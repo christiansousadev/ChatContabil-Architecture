@@ -51,83 +51,76 @@ O sistema utiliza uma arquitetura de microsserviços desacoplados, garantindo qu
 
 ---
 
-## 📸 Demonstração Visual
-
-### **🎨 Experiência de Entrada (UX/UI)**
-
+📸 Demonstração Visual
+🎨 Experiência de Entrada (UX/UI)
 A interface foi projetada para ser moderna e intuitiva, com suporte total a temas Dark e Light e uma área de login segura.
 
 <p align="center">
-<img width="48%" alt="LandingPage Black" src="[https://github.com/user-attachments/assets/4ef1be78-f7a9-4b79-a53d-ef50078482e6](https://github.com/user-attachments/assets/4ef1be78-f7a9-4b79-a53d-ef50078482e6)" />
-<img width="48%" alt="LandingPage White" src="[https://github.com/user-attachments/assets/b1b44ab0-bc17-4c93-afc7-4220fc9b86c4](https://github.com/user-attachments/assets/b1b44ab0-bc17-4c93-afc7-4220fc9b86c4)" />
+<img width="48%" alt="LandingPage Black" src="https://github.com/user-attachments/assets/4ef1be78-f7a9-4b79-a53d-ef50078482e6" />
+<img width="48%" alt="LandingPage White" src="https://github.com/user-attachments/assets/b1b44ab0-bc17-4c93-afc7-4220fc9b86c4" />
 </p>
 
 <p align="center">
-<img width="60%" alt="Login" src="[https://github.com/user-attachments/assets/0cf68c8b-96b1-47ab-ba6a-5778396e6fed](https://github.com/user-attachments/assets/0cf68c8b-96b1-47ab-ba6a-5778396e6fed)" />
+<img width="60%" alt="Login" src="https://github.com/user-attachments/assets/0cf68c8b-96b1-47ab-ba6a-5778396e6fed" />
 </p>
 
-### **💬 O Core: Chat e Relatórios Inteligentes**
-
+💬 O Core: Chat e Relatórios Inteligentes
 O coração do sistema, onde a IA interpreta os dados do banco e apresenta resultados legíveis antes da geração do arquivo final.
 
 <p align="center">
-<img width="48%" alt="Chat 1" src="[https://github.com/user-attachments/assets/0af87329-2264-411f-bd4c-8edf64579ae9](https://github.com/user-attachments/assets/0af87329-2264-411f-bd4c-8edf64579ae9)" />
-<img width="48%" alt="Chat 2" src="[https://github.com/user-attachments/assets/0b469e12-4422-467e-a0aa-59ec783a6de8](https://github.com/user-attachments/assets/0b469e12-4422-467e-a0aa-59ec783a6de8)" />
+<img width="48%" alt="Chat 1" src="https://github.com/user-attachments/assets/0af87329-2264-411f-bd4c-8edf64579ae9" />
+<img width="48%" alt="Chat 2" src="https://github.com/user-attachments/assets/0b469e12-4422-467e-a0aa-59ec783a6de8" />
 </p>
 
-### **⚙️ Painel Administrativo e Governança**
-
+⚙️ Painel Administrativo e Governança
 Controle total de permissões por empresa e monitoramento de logs de segurança.
 
 <p align="center">
-<img width="100%" alt="Painel Admin" src="[https://github.com/user-attachments/assets/5d61bad4-0b26-450d-b75f-1dacb4ec0b08](https://github.com/user-attachments/assets/5d61bad4-0b26-450d-b75f-1dacb4ec0b08)" />
+<img width="100%" alt="Painel Admin" src="https://github.com/user-attachments/assets/5d61bad4-0b26-450d-b75f-1dacb4ec0b08" />
 </p>
 
 <p align="center">
-<img width="30%" alt="Menu Opções" src="[https://github.com/user-attachments/assets/7eecdbdf-a7d8-4293-8dcb-5f775ed806c9](https://github.com/user-attachments/assets/7eecdbdf-a7d8-4293-8dcb-5f775ed806c9)" />
-<img width="65%" alt="Perfil" src="[https://github.com/user-attachments/assets/b71d795f-3639-4c7b-aa23-0f3ad64783f6](https://github.com/user-attachments/assets/b71d795f-3639-4c7b-aa23-0f3ad64783f6)" />
+<img width="30%" alt="Menu Opções" src="https://github.com/user-attachments/assets/7eecdbdf-a7d8-4293-8dcb-5f775ed806c9" />
+<img width="65%" alt="Perfil" src="https://github.com/user-attachments/assets/b71d795f-3639-4c7b-aa23-0f3ad64783f6" />
 </p>
 
-### **🤖 IA e Prompt Engineering**
-
-Área dedicada para configurar provedores de LLM e refinar os *System Prompts* para cada tipo de auditoria ou relatório.
+🤖 IA e Prompt Engineering
+Área dedicada para configurar provedores de LLM e refinar os System Prompts para cada tipo de auditoria ou relatório.
 
 <p align="center">
-<img width="100%" alt="LLM" src="[https://github.com/user-attachments/assets/a798f63f-4ca4-43d0-9aab-db77e2cee50b](https://github.com/user-attachments/assets/a798f63f-4ca4-43d0-9aab-db77e2cee50b)" />
+<img width="100%" alt="LLM" src="https://github.com/user-attachments/assets/a798f63f-4ca4-43d0-9aab-db77e2cee50b" />
 </p>
 
 <p align="center">
-<img width="100%" alt="Prompts" src="[https://github.com/user-attachments/assets/9bbb4a3a-6ad3-4f4b-aad1-7b0f1dc1bdb2](https://github.com/user-attachments/assets/9bbb4a3a-6ad3-4f4b-aad1-7b0f1dc1bdb2)" />
+<img width="100%" alt="Prompts" src="https://github.com/user-attachments/assets/9bbb4a3a-6ad3-4f4b-aad1-7b0f1dc1bdb2" />
 </p>
 
-### **⚙️ Automação de Fluxos (Workflows)**
-
+⚙️ Automação de Fluxos (Workflows)
 Interface de automação visual para orquestrar tarefas complexas conectando banco de dados, IA e serviços externos.
 
-* **API Manager:** Painel de controle para gerenciar e monitorar a saúde dos fluxos.
+API Manager: Painel de controle para gerenciar e monitorar a saúde dos fluxos.
 
 <p align="center">
-<img width="100%" alt="API Manager" src="[https://github.com/user-attachments/assets/eb7a04f0-eb8d-4957-84b6-50dd2f429070](https://github.com/user-attachments/assets/eb7a04f0-eb8d-4957-84b6-50dd2f429070)" />
+<img width="100%" alt="API Manager" src="https://github.com/user-attachments/assets/eb7a04f0-eb8d-4957-84b6-50dd2f429070" />
 </p>
 
-* **Anatomia do Fluxo:** Exemplo de fluxo com Trigger (Webhook), Processamento (SQL/Loop) e Ações (Drive/Email).
+Anatomia do Fluxo: Exemplo de fluxo com Trigger (Webhook), Processamento (SQL/Loop) e Ações (Drive/Email).
 
 <p align="center">
-<img width="100%" alt="Fluxo Automação" src="[https://github.com/user-attachments/assets/48bb20f9-2f01-46f5-a7ca-d08eb974ba11](https://github.com/user-attachments/assets/48bb20f9-2f01-46f5-a7ca-d08eb974ba11)" />
+<img width="100%" alt="Fluxo Automação" src="https://github.com/user-attachments/assets/48bb20f9-2f01-46f5-a7ca-d08eb974ba11" />
 </p>
 
-* **Biblioteca de Nós:** Componentes prontos para IA, Conectores de dados e Lógica Avançada.
+Biblioteca de Nós: Componentes prontos para IA, Conectores de dados e Lógica Avançada.
 
 <p align="center">
-<img width="50%" alt="Nós" src="[https://github.com/user-attachments/assets/fd185398-97fe-4988-a7ac-3ba532404e8b](https://github.com/user-attachments/assets/fd185398-97fe-4988-a7ac-3ba532404e8b)" />
+<img width="50%" alt="Nós" src="https://github.com/user-attachments/assets/fd185398-97fe-4988-a7ac-3ba532404e8b" />
 </p>
 
-### **📖 Documentação da API (Swagger)**
-
+📖 Documentação da API (Swagger)
 Padronização seguindo OpenAPI 3.0 para garantir integrabilidade e escalabilidade.
 
 <p align="center">
-<img width="100%" alt="Swagger" src="[https://github.com/user-attachments/assets/f77c270f-cc0d-4d0d-841a-fff7e13e7f46](https://github.com/user-attachments/assets/f77c270f-cc0d-4d0d-841a-fff7e13e7f46)" />
+<img width="100%" alt="Swagger" src="https://github.com/user-attachments/assets/f77c270f-cc0d-4d0d-841a-fff7e13e7f46" />
 </p>
 
 ---
