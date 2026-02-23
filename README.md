@@ -1,5 +1,3 @@
----
-
 # 📊 ChatContabil-Architecture - Inteligência Artificial Aplicada à Contabilidade
 
 > **⚠️ Aviso de Showcase:** Este repositório é uma vitrine arquitetural. Devido à sensibilidade dos dados contábeis e à propriedade intelectual envolvida (LGPD), o código-fonte principal é mantido de forma privada. Abaixo, detalho a engenharia por trás do sistema que integra bancos de dados contábeis, LLMs e automação de fluxos.
