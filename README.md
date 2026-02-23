@@ -206,11 +206,15 @@ Padronização seguindo OpenAPI 3.0 para garantir integrabilidade e escalabilida
 
 ---
 
-<p align="center">
-**Desenvolvido por Christian Sousa** 
-</p>
-<p align="center">
-*Desenvolvimento de sistemas inteligentes e automação.*
-</p>
+<div align="center">
+  <sub>Projeto arquitetado por</sub>
+  <h3>Christian Sousa</h3>
+  <p>Python | Node.js | React | AI Engineering</p>
+  
+  <p>
+    <img src="https://img.shields.io/badge/Status-Showcase-blue" alt="Status">
+    <img src="https://img.shields.io/badge/Focus-Finance_&_AI-green" alt="Focus">
+  </p>
+</div>
 
 ---
